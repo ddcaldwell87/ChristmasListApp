@@ -4,6 +4,7 @@ var wishList = {
   listItems: [],
   // console logs the entire list array
   displayListItems: function() {
+    console.log('Wish List:');
     console.log(this.listItems);
   },
   // adds a new item to the list array
@@ -16,7 +17,7 @@ var wishList = {
   },
   // updates a single item from the list array
   updateListItems: function(position, listItemText) {
-    this.listItems[position] = listItemText;
+    this.listItems[position].listItemText = listItemText;
     this.displayListItems();
   },
   // deletes a single item from the list array
