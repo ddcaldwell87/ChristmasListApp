@@ -56,9 +56,13 @@ var handlers = {
     updateListItemsInputText = '';
   },
   deleteListItems: function() {
-
+    var deleteListItemsInputPosition = document.getElementById('deleteListItemsInputPosition');
+    wishList.deleteListItems(deleteListItemsInputPosition.valueAsNumber);
+    deleteListItemsInputPosition.value = '';
   },
   toggleCompleted: function() {
-
+    var toggleCompletedInputPosition = document.getElementById('toggleCompletedInputPosition');
+    wishList.toggleCompleted(toggleCompletedInputPosition.valueAsNumber);
+    toggleCompletedInputPosition.value = '';
   }
 };
