@@ -49,7 +49,11 @@ var handlers = {
     addListItemsInputText.value = '';
   },
   updateListItems: function() {
-    
+    var updateListItemsInputPosition = document.getElementById('updateListItemsInputPosition');
+    var updateListItemsInputText = document.getElementById('updateListItemsInputText');
+    wishList.updateListItems(updateListItemsInputPosition.valueAsNumber, updateListItemsInputText.value);
+    updateListItemsInputPosition.value = '';
+    updateListItemsInputText = '';
   },
   deleteListItems: function() {
 
