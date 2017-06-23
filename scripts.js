@@ -5,7 +5,9 @@ var wishList = {
   // console logs the entire list array
   displayListItems: function() {
     console.log('Wish List:');
-    console.log(this.listItems);
+    for (var i = 0; i < this.listItems.length; i++) {
+        console.log(this.listItems[i].listItemText);
+    }
   },
   // adds a new item to the list array
   addListItems: function(listItemText) {
