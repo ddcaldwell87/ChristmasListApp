@@ -44,10 +44,12 @@ var handlers = {
     wishList.displayListItems();
   },
   addListItems: function() {
-
+    var addListItemsInputText = document.getElementById('addListItemsInputText');
+    wishList.addListItems(addListItemsInputText.value);
+    addListItemsInputText.value = '';
   },
   updateListItems: function() {
-
+    
   },
   deleteListItems: function() {
 
