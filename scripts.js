@@ -37,3 +37,22 @@ var wishList = {
     this.displayListItems();
   }
 };
+
+// takes input from the DOM and calls methods from wishList to manipulate that input
+var handlers = {
+  displayListItems: function() {
+    wishList.displayListItems();
+  },
+  addListItems: function() {
+
+  },
+  updateListItems: function() {
+
+  },
+  deleteListItems: function() {
+
+  },
+  toggleCompleted: function() {
+
+  }
+};
